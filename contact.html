@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .contact {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contactme h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .contactme h2 span {
+            color: #5cb85c;
+        }
+        
+        .contact-text h4 {
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 10px;
+        }
+        
+        .contact-text p {
+            color: #777;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        
+        .contact-list li {
+            margin: 10px 0;
+            color: #555;
+        }
+        
+        .contact-list li i {
+            color: #5cb85c;
+            margin-right: 10px;
+        }
+        
+        .contact-icons a {
+            margin: 0 10px;
+            color: #555;
+            font-size: 2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-icons a:hover {
+            color: #5cb85c;
+        }
+        
+        .contact-form {
+            margin-top: 30px;
+        }
+        
+        .contact-form h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .contact-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #5cb85c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-form input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+        
+        .last-text {
+            margin-top: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+        
+        .top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: background-color 0.3s ease;
+        }
+        
+        .top:hover {
+            background-color: #4cae4c;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="contact" id="contact">
+        <div class="contactme">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-text">
+            <h4>Let's Work Together</h4>
+            <p>and turn ideas into reality!</p>
+        
+            <ul class="contact-list">
+                <li><i class='bx bxs-send'></i>nikudhiman01@gmail.com</li>
+                <li><i class='bx bx-phone'></i>0000000000</li>
+            </ul>
+        </div>
+        <div class="contact-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <div class="contact-form">
+            <h1>Get in Touch</h1>
+            <form action="">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Enter Your Name" required><br>
+        
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Enter Your Email" required><br>
+        
+                <label for="message"></label>
+                <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea><br>
+                
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+        <div class="last-text">
+            <p>Developed By Nikita</p>
+        </div>
+        <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
