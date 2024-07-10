@@ -203,17 +203,8 @@ body{
     line-height: 1.4;
     margin-bottom: 4rem;
 }
-.sub-title{
-    text-align: center;
-    font-size: 60px;
-    padding-bottom: 70px;
-}
-.sub-title span{
-    color: rgb(141, 8, 171);
-}
-.container{
-    padding: 90px;
-}
+
+/*service*/
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
@@ -288,15 +279,113 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
+/*end service*/
+
+/* education heading*/
+.heading h1 {
+    
+    font-size: 50px;
+    align-items: center;
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+.heading-box h1 span {
+    font-weight: bold;
+    color: rgb(141, 8, 171);
+}
+
+
+.education-container {
+    background-color: #C1C8E4;
+    padding:  0;
+    text-align:left;
+
+}
+
+#education-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-color: #3e054f;
+    border-width: 2px;
+}
+
+.education-item {
+    width:800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(205, 74, 231, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.education-item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-item h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.education-item {
+    width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(205, 74, 231, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #3e054f; /* Default border color */
+}
+
+/* Adding specific border colors for each education item */
+.education-item:nth-child(odd) {
+    border-color: #aa22e0; /* Purple border for odd-indexed items */
+}
+
+.education-item:nth-child(even) {
+    border-color: #007bff; /* Blue border for even-indexed items */
+}
+
+
+/* skills*/
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    margin-top: 40px;
+}
+.sub-title span{
+    color: rgb(141, 8, 171);
+}
+.container{
+    padding: 10px;
+}
 .container1 {
     max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center align horizontally */
-    padding: 50px; /* Adjust padding as needed */
+    margin: auto; /* Center align horizontally */
+    padding: ; /* Adjust padding as needed */
     text-align: center; /* Center align the content */
 }
 
 .heading1 {
     text-decoration: underline;
+    color: #b969ef;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 30px; /* Reduce margin bottom for better spacing */
@@ -338,7 +427,7 @@ section{
 .Technical-bars .bar .progress-line span {
     display: block;
     height: 100%;
-    background-color: rgb(141, 15, 214);
+    background-color: rgb(59, 163, 211);
     border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
@@ -410,13 +499,14 @@ section{
     opacity: 0;
 }
 
-
-
 @keyframes showText{
     100%{
         opacity: 1;
     }
 }
+
+/*radial skills */
+
 .radial-bars{
     width: 100%;
     display: flex;
@@ -453,6 +543,7 @@ section{
         stroke-dashoffset: -1;
     }
 }
+
 .path{
     stroke-width: 10;
     stroke: #5AB9EA;
@@ -509,9 +600,14 @@ section{
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 } 
+/*end radila bar*/
+
+
+/*portfolio*/
+
 .main-text{
-    padding-top: 100px;
-    margin-top: 10px;
+    padding-top: 05px;
+    margin-top: 05px;
 }
 .main-text h2{
     font-size: 60px;
@@ -521,504 +617,346 @@ section{
 .main-text h2 span{
     color: rgb(92, 10, 124);
 }
-.portfolio-content{
-    display: flex;
-    /* justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; */
-    grid-template-columns: repeat(auto-fit, minmax(359px,auto));
+.portfolio {
+    padding: 80px 0;
+    background-color: #C1C8E4;
 }
-.row{
-    flex: 1 1 30rem;
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-    align-items: center;
-}
-.row img{
-    width: 100%;
-    border-radius: 8px;
-    display: flex;
-    transition: transform 0.5s;
-    /* height: 300px; */
 
-}
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
-    position: absolute;
-    border-radius: 8px;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.portfolio #project {
     text-align: center;
-    padding: 0 40px;
-    transition: height 0.5s;
 }
-.layer h5{
-    color: #000;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
+
+.portfolio .main-text h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 50px;
 }
-.layer p{
-    color: #000;
+
+.portfolio .main-text h2 span {
+    color: #6a2bc9;
+}
+
+.portfolio .portfolio-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio .project-container {
+    max-width: 600px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff; /* Background color for project container */
+}
+
+.portfolio .project-container:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio .project-container .row {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio .project-container .project-image {
+    flex: 1;
+}
+
+.portfolio .project-container .project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image covers its container */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.portfolio .project-container .project-description {
+    flex: 1;
+    padding: 20px;
+}
+
+.portfolio .project-container .project-description h5 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.portfolio .project-container .project-description p {
     font-size: 1rem;
-    line-height: 1.8;
-}
-.layer i{
-    color: #ff004f;
-    margin-top: 20px;
-    font-size: 20px;
-    background:#C1C8E4;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-.row:hover img{
-    transform: scale(1.1);
-}
-.row:hover .layer{
-    height: 100%;
+    line-height: 1.6;
 }
 
-/* CSS for Project Section */
-
-
-#project .portfolio-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns, each taking up equal space */
-    gap: auto; /* Adjust the gap between grid items */
-    padding: 20px;
-}
-
-#project .project-container {
-    padding: auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(193, 134, 233, 0.1); /* Optional: Add shadow for depth */
-}
-
-#project .row {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer;
-}
-
-#project .row img {
-
-    width: 80%;
-    display: block;
-    transition: transform 0.3s ease;
-    border-radius: 10px; /* Rounded corners */
-}
-
-#project .layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 80%;
-    height: 0;
-    background: linear-gradient(rgba(86, 165, 211, 0.6), rgba(164, 69, 223, 0.8)); /* Gradient overlay */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end; /* Align content to bottom of overlay */
-    padding: 20px;
-    transition: height 0.3s ease; /* Smooth height transition */
-}
-
-#project .layer h5,
-#project .layer p {
-    color: #fff; /* Text color for overlay */
-}
-
-#project .row:hover img {
-    transform: scale(1.1);
-}
-
-#project .row:hover .layer {
-    height: auto; /* Expand overlay on hover */
-}
-
-
-.contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 3rem;
-    padding-left: 30px;
-    margin-top: 130px;
-}
-.contact-text h2{
-    font-size: 90px;
-    line-height: 1;
-    text-align: center;
-    color:rgb(125, 10, 179);
-}
-.contact-text h2 span{
-    color: rgb(125, 10, 179);
-}
-.contact-text h4{
-    margin: 15px 0;
-    color: rgb(115, 19, 184);
-    font-size: 20px;
-    font-weight: 600;
-}
-.contact-text p{
-    color: rgb(6, 0, 0);
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 2rem;
-}
-.contact-list{
-    margin-bottom: 3rem;
-}
-.contact-list li{
-    margin-bottom: 10px;
-    display: block;
-}
-.contact-list i{
-    display: inline-block;
-    color: #5680E9;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all .40s ease;
-}
-.contact-list li a:hover{
-    transform: scale(1.01) translateY(-5px);
-    color: rgb(129, 13, 164);
-}
-.contact-icons i{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    background: transparent;
-    border: 2px solid rgb(83, 4, 107);
-    border-radius: 50%;
-    font-size: 20px;
-    color: rgb(204, 95, 234);
+.portfolio .project-container .project-description a {
+    color: #333;
     text-decoration: none;
-    margin: 30px 15px 30px 0;
-    transition: .5s ease;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
-    
-}
-.contact-icons i:hover{
-    background: rgb(93, 1, 121);
-    color: #000;
-    box-shadow: 0  0 20px #0ef;
+    font-size: 1.2rem;
+    display: inline-block;
 }
 
-.last-text {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8; /* Light background color */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
+.portfolio .project-container .project-description a i {
+    margin-right: 5px;
+    font-size: 1.5rem;
 }
 
-.last-text p {
-    font-size: 1.5em; /* Increased font size */
-    color: #555; /* Text color */
-    margin: 0;
-    position: relative;
-    z-index: 1;
+.portfolio .project-container .project-description a:hover {
+    text-decoration: underline;
 }
-
-.last-text::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: linear-gradient(135deg, rgba(166, 29, 216, 0.5), rgba(44, 46, 218, 0.5)); /* Gradient color */
-    transition: all 0.5s ease;
-    transform: translate(-50%, -50%) rotate(45deg);
-    z-index: 0;
+.portfolio .project-container h5{
+    color: black;
 }
-
-.last-text:hover::before {
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%) rotate(0deg);
-}
-
-.last-text:hover {
-    color: #fff; /* Text color on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.top{
-    position: fixed;
-    bottom: 2.1rem;
-    right: 2.1rem;
-}
-.top i{
-    color: #000;
-    background: rgb(150, 30, 206);
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 0.5rem;
+.portfolio .project-container p{
+    color: black;
 }
 
 
-@keyframes slideRight{
-    0% { 
+/*end portfolio*/
+
+/*get in touch *//* Paste your CSS styles here */
+    .get {
+      padding-left: 35%;
+      padding-right: 35%;/* Adjust padding as needed */
+      background-color: #C1C8E4; /* Background color for the section */
+      text-align: center;
+     padding-bottom: auto;
+    }
+
+    .get:hover {
+      box-shadow: 0 10px 20px rgba(44, 157, 213, 0.1); /* Adjusted box shadow on hover */
+    }
+
+    .contact-form {
+      background-color: #eff0f1;
+      padding: auto;
+      
+      box-shadow: 0 0 15px rgba(104, 236, 67, 0.2);
+      max-width: 500px;
+      width: 100%;
+      margin:auto; /* Center align horizontally */
+      text-align: center;
+      position: relative; /* Ensure relative positioning for icon animations */
+      transition: transform 0.2s ease, box-shadow 1.0s ease; /* Extended transition duration */
+    }
+
+    .contact-form:hover {
+      transform: translateY(0.5s); /* Lift the form slightly on hover */
+      box-shadow: 0 10px 20px rgba(38, 41, 222, 0.884); /* Adjusted box shadow on hover */
+      background-color: rgb(205, 147, 225);
+    }
+
+    .contact-form h1 {
+      font-size: 2.5em;
+      color: #8520de;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+      padding-left: 20px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form textarea {
+      width: calc(100% - 20px);
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1em;
+      font-family: 'Arial', sans-serif;
+      transition: border-color 0.5s ease, box-shadow 0.5s ease; /* Extended transition duration */
+    }
+
+    .contact-form input[type="text"]:focus,
+    .contact-form input[type="email"]:focus,
+    .contact-form input[type="tel"]:focus,
+    .contact-form textarea:focus {
+      border-color: #2c38e8;
+      outline: none;
+      box-shadow: 0 0 8px rgb(151, 27, 189);
+    }
+
+    .contact-form textarea {
+      resize: vertical; /* Allow vertical resizing of textarea */
+    }
+
+    .contact-form input[type="submit"] {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid transparent; /* Initial transparent border */
+      border-radius: 6px;
+      background-color: #b52bd8;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+      position: relative; /* Ensure relative positioning for pseudo-element */
+      overflow: hidden; /* Hide overflowing pseudo-element */
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #48d9e4;
+      border-color: #b52bd8; /* Highlight border color on hover */
+    }
+
+    .contact-form input[type="submit"]:hover::after {
+      content: ''; /* Create pseudo-element for shine effect */
+      position: absolute;
+      top: -50%; /* Position above button */
+      left: -50%;
+      width: 200%; /* Extend beyond button width */
+      height: 200%; /* Extend beyond button height */
+      background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+      transform: rotate(30deg); /* Rotate for diagonal effect */
+      transition: all 0.5s ease; /* Smooth transition for shine effect */
+      pointer-events: none; /* Allow clicks through pseudo-element */
+    }
+
+    .contact-form input[type="submit"]:hover::after {
+      top: 130%; /* Move shine effect below button on hover */
+      left: 80%; /* Adjust position for diagonal shine effect */
+    }
+
+
+    .contact-icons i {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        background: transparent;
+        border: 2px solid rgb(83, 4, 107);
+        border-radius: 50%;
+        font-size: 20px;
+        color: rgb(204, 95, 234);
+        text-decoration: none;
+        margin: 30px 15px 30px 0;
+        transition: .5s ease;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: calc(.2s * var(--i));
+      }
+  
+      .contact-icons i:hover {
+        background: rgb(93, 1, 121);
+        color: #000;
+        box-shadow: 0 0 20px #0ef;
+      }
+
+    .last-text {
+      margin: auto;
+      padding: 20px;
+      max-width: auto;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8; /* Light background color */
+      border: 1px solid #7f13ad;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .last-text p {
+      font-size: 1.5em; /* Increased font size */
+      color: #020202; /* Text color */
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .last-text::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 250%;
+      background: linear-gradient(135deg, rgba(36, 217, 217, 0.925), rgba(151, 32, 219, 0.5)); /* Gradient color */
+      transition: all 0.5s ease;
+      transform: translate(-50%, -50%) rotate(45deg);
+      z-index: 0;
+    }
+
+    .last-text:hover::before {
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .last-text:hover {
+      color: #fff; /* Text color on hover */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+
+    .top {
+      position: fixed;
+      bottom: 2.1rem;
+      right: 2.1rem;
+    }
+
+    .top i {
+      color: #000;
+      background: rgb(150, 30, 206);
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 0.5rem;
+    }
+
+    @keyframes slideRight {
+      0% {
         transform: translateX(-100px);
         opacity: 0;
-    }
-    100% {
+      }
+      100% {
         transform: translateX(0px);
         opacity: 1;
+      }
     }
-}
 
-@keyframes slideLeft{
-    0% { 
+    @keyframes slideLeft {
+      0% {
         transform: translateX(100px);
         opacity: 0;
-    }
-    100% {
+      }
+      100% {
         transform: translateX(0px);
         opacity: 1;
+      }
     }
-}
 
-@keyframes slideTop{
-    0% { 
+    @keyframes slideTop {
+      0% {
         transform: translateY(100px);
         opacity: 0;
-    }
-    100% {
+      }
+      100% {
         transform: translateY(0px);
         opacity: 1;
+      }
     }
-}
 
-@keyframes slideBottom{
-    0% { 
+    @keyframes slideBottom {
+      0% {
         transform: translateY(-100px);
         opacity: 0;
-    }
-    100% {
+      }
+      100% {
         transform: translateY(0px);
         opacity: 1;
+      }
     }
-}
-/* Container for Education Section */
-#education-container {
-    margin: 20px auto;
-    padding: 20px; /* Reduced padding */
-    max-width: 800px; /* Adjusted max-width */
-    font-family: Arial, sans-serif;
-    border: 1px solid #ddd;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(176, 84, 230); /* Light gray background */
-}
 
-#education-header h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 2.5em;
-    color: #333;
-}
-
-#education-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.education-item {
-    padding: 10px; /* Reduced padding */
-    border-radius: 10px; /* Added missing value */
-    background-color: #fff; /* White background for each item */
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.education-item:hover {
-    transform: translateY(-5px) scale(1.02); /* Lift item slightly and scale on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
-}
-
-.education-item:last-child {
-    margin-bottom: 0;
-}
-
-.education-item h5 {
-    margin: 0;
-    font-size: 0.2; /* Adjusted font size */
-    color: #777;
-}
-
-.education-item h3 {
-    margin: 8px 0; /* Adjusted margin */
-    font-size: 0.8em; /* Adjusted font size */
-    color: #333;
-}
-
-.education-item p {
-    margin: 5px 0 0;
-    font-size: 0.7em; /* Adjusted font size */
-    color: #555;
-}
-
-
-
-.contactme {
+    /* Additional styles for contact icons */
     
-    color: #3e054f; /* Text color */
-    font-size: 4em; /* Font size */
-    
-}
-
-.contactme:hover {
-    transform: translateY(-10px); /* Lift section slightly on hover */
-    /* Change background color on hover */
-    color: #3e054f; /* Change text color on hover */
-    /* Enhanced shadow on hover */
-}
-
-.contactme span:hover {
-    color: #fff; /* Change text color on hover for specific words */
-    background-color: rgb(143, 10, 180); /* Background color on hover for specific words */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-
-.contactme::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    transition: transform 0.5s ease; /* Transition for overlay animation */
-    transform: translateX(-100%);
-}
-
-.contactme:hover::before {
-    transform: translateX(0); /* Slide-in effect on hover */
-}
-
-.contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
-}
-
-.contact-form:hover {
-    background-color: #5680E9;
-    transform: translateY(-5px); /* Lift form slightly on hover */
-    box-shadow: 1px 1px 20px #9c1dc7f7, 1px 1px 40px #020202f7;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form form label {
-    margin-bottom: 8px;
-    font-size: 1em;
-    color: #333;
-}
-
-.contact-form form input,
-.contact-form form textarea {
-    border: 1px solid #ccc;
-    padding: 12px;
-    background: #f9f9f9;
-    color: #333;
-    font-size: 0.9em;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-form form input:focus,
-.contact-form form textarea:focus {
-    border-color: rgb(176, 84, 230);
-    box-shadow: 0 0 8px rgba(176, 84, 230, 0.5);
-}
-
-.contact-form textarea {
-    resize: none;
-    height: 50px;
-}
-
-.contact-form form .send {
-    display: inline-block;
-    padding: 12px 40px;
-    background: rgb(176, 84, 230);
-    border-radius: 30px;
-    font-size: 0.95em;
-    color: white;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.contact-form form .send:hover {
-    background: #5b2eae;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
-}
-
-/* Animation for form entry */
-@keyframes form-entry {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.contact-form {
-    animation: form-entry 0.8s ease forwards;
-}
-
-.contact-form form .send {
-    opacity: 0;
-    animation: form-entry 0.8s ease forwards;
-    animation-delay: 0.5s;
-}

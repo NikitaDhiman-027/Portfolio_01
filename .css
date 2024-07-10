@@ -1,0 +1,237 @@
+/get in touch *// Paste your CSS styles here */
+    .get {
+      padding: 50px 0; /* Adjust padding as needed */
+      background-color: #C1C8E4; /* Background color for the section */
+      text-align: center;
+    }
+
+    .get:hover {
+      box-shadow: 0 10px 20px rgba(44, 157, 213, 0.1); /* Adjusted box shadow on hover */
+    }
+
+    .contact-form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(104, 236, 67, 0.2);
+      max-width: 400px;
+      width: 100%;
+      margin: 100px auto; /* Center align horizontally */
+      text-align: center;
+      position: relative; /* Ensure relative positioning for icon animations */
+      transition: transform 0.2s ease, box-shadow 1.0s ease; /* Extended transition duration */
+    }
+
+    .contact-form:hover {
+      transform: translateY(0.5s); /* Lift the form slightly on hover */
+      box-shadow: 0 10px 20px rgba(68, 232, 59, 0.884); /* Adjusted box shadow on hover */
+    }
+
+    .contact-form h1 {
+      font-size: 2.5em;
+      color: #aa22e0;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form textarea {
+      width: calc(100% - 20px);
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1em;
+      font-family: 'Arial', sans-serif;
+      transition: border-color 0.5s ease, box-shadow 0.5s ease; /* Extended transition duration */
+    }
+
+    .contact-form input[type="text"]:focus,
+    .contact-form input[type="email"]:focus,
+    .contact-form input[type="tel"]:focus,
+    .contact-form textarea:focus {
+      border-color: #ba32e8;
+      outline: none;
+      box-shadow: 0 0 8px rgb(151, 27, 189);
+    }
+
+    .contact-form textarea {
+      resize: vertical; /* Allow vertical resizing of textarea */
+    }
+
+    .contact-form input[type="submit"] {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid transparent; /* Initial transparent border */
+      border-radius: 6px;
+      background-color: #b52bd8;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+      position: relative; /* Ensure relative positioning for pseudo-element */
+      overflow: hidden; /* Hide overflowing pseudo-element */
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #48d9e4;
+      border-color: #b52bd8; /* Highlight border color on hover */
+    }
+
+    .contact-form input[type="submit"]:hover::after {
+      content: ''; /* Create pseudo-element for shine effect */
+      position: absolute;
+      top: -50%; /* Position above button */
+      left: -50%;
+      width: 200%; /* Extend beyond button width */
+      height: 200%; /* Extend beyond button height */
+      background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+      transform: rotate(30deg); /* Rotate for diagonal effect */
+      transition: all 0.5s ease; /* Smooth transition for shine effect */
+      pointer-events: none; /* Allow clicks through pseudo-element */
+    }
+
+    .contact-form input[type="submit"]:hover::after {
+      top: 130%; /* Move shine effect below button on hover */
+      left: 80%; /* Adjust position for diagonal shine effect */
+    }
+
+    .last-text {
+      margin: auto;
+      padding: 20px;
+      max-width: auto;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8; /* Light background color */
+      border: 1px solid #7f13ad;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .last-text p {
+      font-size: 1.5em; /* Increased font size */
+      color: #020202; /* Text color */
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .last-text::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 250%;
+      background: linear-gradient(135deg, rgba(36, 217, 217, 0.925), rgba(151, 32, 219, 0.5)); /* Gradient color */
+      transition: all 0.5s ease;
+      transform: translate(-50%, -50%) rotate(45deg);
+      z-index: 0;
+    }
+
+    .last-text:hover::before {
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .last-text:hover {
+      color: #fff; /* Text color on hover */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+
+    .top {
+      position: fixed;
+      bottom: 2.1rem;
+      right: 2.1rem;
+    }
+
+    .top i {
+      color: #000;
+      background: rgb(150, 30, 206);
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 0.5rem;
+    }
+
+    @keyframes slideRight {
+      0% {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideTop {
+      0% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideBottom {
+      0% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+    /* Additional styles for contact icons */
+    .contact-icons i {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      background: transparent;
+      border: 2px solid rgb(83, 4, 107);
+      border-radius: 50%;
+      font-size: 20px;
+      color: rgb(204, 95, 234);
+      text-decoration: none;
+      margin: 30px 15px 30px 0;
+      transition: .5s ease;
+      opacity: 0;
+      animation: slideLeft 1s ease forwards;
+      animation-delay: calc(.2s * var(--i));
+    }
+
+    .contact-icons i:hover {
+      background: rgb(93, 1, 121);
+      color: #000;
+      box-shadow: 0 0 20px #0ef;
+    }
